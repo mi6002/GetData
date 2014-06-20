@@ -57,6 +57,7 @@ str(dataXTrain)
 
 iii) 4 txt files as follows
 
+txt file 1
 README.txt that gives the background information about the experiments and data. It includes information about the authors and their affiliation, version number, license, etc. Of particular interest are the following pieces of information:
 
 For each record:
@@ -85,6 +86,17 @@ Files included in the data set:
 
 - 'test/y_test.txt': Test labels.
 
+This README.txt file also contains information about the ranges and units of the train and test data, reproduced below.
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+
+txt file 2
 activity_labels.txt simply contains the 6 predefined categories of activities, namely
 
 1 WALKING
@@ -99,7 +111,7 @@ activity_labels.txt simply contains the 6 predefined categories of activities, n
 
 6 LAYING
 
-
+txt file 3
 feature_info.txt, with particularly relevant information reproduced below.
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -144,6 +156,7 @@ angle(): Angle between to vectors.
 
 Among these, mean() and std() are of particular interest in this exercise. 
 
+txt file 4
 The 4th txt file is features.txt, which contains 561 feature labels. So, for example,
 > Feature_labels <- read.table('UCI HAR Dataset//features.txt')
 > head(Feature_labels)
