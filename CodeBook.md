@@ -58,7 +58,7 @@ iii) 4 txt files as follows
 
 README.txt that gives the background information about the experiments and data. It includes information about the authors and their affiliation, version number, license, etc. Of particular interest are the following pieces of information:
 
-For each records:
+For each record:
 ======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
