@@ -1,6 +1,4 @@
-As required, this CodeBook.md is  a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.
-
-It accompanies the main R script known as run_analysis.R and a readme.md file that explains how run_analysis.R works.
+As required, this CodeBook.md is  a code book that describes the variables, the data, and transformations performed to clean up the data. It accompanies the main R script known as run_analysis.R and a readme.md file that explains how run_analysis.R works.
 
 I. Basic Premise
 ==========================================
@@ -311,13 +309,13 @@ Adding Subject, Activity ID and Actitvity factors, the data set becomes DataMean
  $ fBodyBodyGyroJerkMag-mean(): num  -0.992 -0.996 -0.995 -0.995 -0.995 ...
  $ fBodyBodyGyroJerkMag-std() : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
  
- 
-
-
+ __________________
 
 5. The next thing to do is to generate another data set that contains the average of each variable for each activity and each subject. To do this, the reshape2 functions melt and dcast (for data frame cast) are used. 
 In the melt operation, Subject, Activity Id and Activity are specified as id variables. By default, the others are treated as measured variables.
 dcast is then applied to the molten data with formula = Subject + Activity.Id + Activity ~ variable, fun=mean to obtain the final set of data.
+
+
 
 6.The very last step is to write the final data to a file named processedData.txt.
  
