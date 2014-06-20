@@ -31,9 +31,42 @@ str(dataXTest)
 'data.frame':	2947 obs. of  1 variable:
  $ V1: int  5 5 5 5 5 5 5 5 5 5 ...
 
-ii) a directory known as train
+Similarly, a str of subject_test (internally known as dataSubjectTest) gives
+str(dataSubjectTest)
+'data.frame':	2947 obs. of  1 variable:
+ $ V1: int  2 2 2 2 2 2 2 2 2 2 ...
 
-iii) 4 txt files.
+ii) a directory known as train
+Essentially training data sets that reflect the test data, i.e. X_, y_ and subject_). Specifically, we have
+str(dataXTrain)
+'data.frame':	7352 obs. of  561 variables:
+ $ V1  : num  0.289 0.278 0.28 0.279 0.277 ...
+ $ V2  : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
+ $ V3  : num  -0.133 -0.124 -0.113 -0.123 -0.115 ...
+ $ V4  : num  -0.995 -0.998 -0.995 -0.996 -0.998 ...
+ $ V5  : num  -0.983 -0.975 -0.967 -0.983 -0.981 ...
+ 
+ str(datayTrain)
+'data.frame':	7352 obs. of  1 variable:
+ $ V1: int  5 5 5 5 5 5 5 5 5 5 ...
+ 
+ str(dataSubjectTrain)
+'data.frame':	7352 obs. of  1 variable:
+ $ V1: int  1 1 1 1 1 1 1 1 1 1 ...
+
+iii) 4 txt files as follows
+activity_labels.txt simply contains the 6 predefined categories of activities, namely
+1 WALKING
+
+2 WALKING_UPSTAIRS
+
+3 WALKING_DOWNSTAIRS
+
+4 SITTING
+
+5 STANDING
+
+6 LAYING
 
 
 3. Transformations
