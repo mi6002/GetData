@@ -312,6 +312,9 @@ Adding Subject, Activity ID and Actitvity factors, the data set becomes DataMean
  $ fBodyBodyGyroJerkMag-std() : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
  
  
+
+
+
 5. The next thing to do is to generate another data set that contains the average of each variable for each activity and each subject. To do this, the reshape2 functions melt and dcast (for data frame cast) are used. 
 In the melt operation, Subject, Activity Id and Activity are specified as id variables. By default, the others are treated as measured variables.
 dcast is then applied to the molten data with formula = Subject + Activity.Id + Activity ~ variable, fun=mean to obtain the final set of data.
