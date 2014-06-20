@@ -60,7 +60,7 @@ DataMeanStd <- CompleteDataSet[,c(1,2,3, ColsWithMeanStd)]
 
 
 ######Step 3 Reshape the data and generate the final data set that meets all 5 requirements. Melt and dcast will be used.
-MoltenData <- melt(DataMeanStd, id=c("Subject","Activity.Id","Activity"))
+MoltenData <- melt(DataMeanStd, id.vars=c("Subject","Activity.Id","Activity"))
 FinalData <- dcast(MoltenData, formula = Subject + Activity.Id + Activity ~ variable, fun=mean)
 write.table(FinalData, "processedData.txt")
 
