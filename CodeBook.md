@@ -155,17 +155,21 @@ III. Transformations
 ==========================================
 Transformations done to the raw data include the following.
 
-1. Combine the X train, y train and subject train data to form a combined training data set: 
+Transformation 1
+Combine the X train, y train and subject train data to form a combined training data set: 
 > CombinedTraindata <- cbind(dataSubjectTrain, yTrainLabels, dataXTrain)
 
-2. Do the same for test data:
+Transformation 2 
+Repeat Transformation 1 for test data:
 > CombinedTestdata <- cbind(dataSubjectTest, yTestLabels, dataXTest)
 
-3. Combine the above 2 to form the complete data set
+Transformation 3
+Combine the above 2 to form the complete data set
 > CompleteDataSet <-  rbind(CombinedTraindata, CombinedTestdata)
 
 
-4. Extract the relevant mean and standard deviation measures, 66 of them: 
+Transformation 4
+Extract the relevant mean and standard deviation measures, 66 of them: 
 > RowsWithMeanStd
      V1                          V2
 1     1           tBodyAcc-mean()-X
@@ -311,11 +315,12 @@ Adding Subject, Activity ID and Actitvity factors, the data set becomes DataMean
  
  __________________
 
-5. The next thing to do is to generate another data set that contains the average of each variable for each activity and each subject. To do this, the reshape2 functions melt and dcast (for data frame cast) are used. 
+Transformation 5
+The next thing to do is to generate another data set that contains the average of each variable for each activity and each subject. To do this, the reshape2 functions melt and dcast (for data frame cast) are used. 
 In the melt operation, Subject, Activity Id and Activity are specified as id variables. By default, the others are treated as measured variables.
 dcast is then applied to the molten data with formula = Subject + Activity.Id + Activity ~ variable, fun=mean to obtain the final set of data.
 
 
-
-6.The very last step is to write the final data to a file named processedData.txt.
+Transformation 6
+The very last step is to write the final data to a file named processedData.txt.
  
