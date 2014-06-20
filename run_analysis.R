@@ -1,4 +1,4 @@
-##runhead_analysis.R
+##analysis.R
 ##Input: UCI HAR data obtained from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 ##Output: Cleaned / merged data set as per specifications
 ##Actions:
