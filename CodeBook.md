@@ -3,6 +3,7 @@ As required, this CodeBook.md is  a code book that describes the variables, the 
 It accompanies the main R script known as run_analysis.R and a readme.md file that explains how run_analysis.R works.
 
 I. Basic Premise
+==========================================
 The raw data files used in this exercise are all contained in a directory known as "UCI HAR Dataset". The whole set of files have been downloaded from 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 In particular, the files have been unzipped (from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and put into a working directory 
@@ -12,7 +13,7 @@ So, when both "UCI HAR Dataset" and run_analysis.R are contained in the (same) w
 by typing source("run_analysis.R").
 
 II. Data files and variables
-
+==========================================
 In terms of the raw data files available, the main directory  "UCI HAR Dataset" contains the following.
 
 i) a directory known as test
@@ -151,7 +152,7 @@ The 4th txt file is features.txt, which contains 561 feature labels. So, for exa
 
 
 III. Transformations
-
+==========================================
 Transformations done to the raw data include the following.
 
 1. Combine the X train, y train and subject train data to form a combined training data set: 
